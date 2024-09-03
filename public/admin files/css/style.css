@@ -1,0 +1,2175 @@
+/* source codding start*/ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html
+{
+    font-size: 16px;
+}
+body{
+    background-color:rgba(0, 0, 0, 0.07); 
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+} 
+
+/* smallest devices (phones, 400px and down) */
+
+@media only screen and (max-width: 500px)
+{
+    #header
+    {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+        background-color: #235EFF;
+        color: white;
+        padding:2vh;
+        font-family: 'Poppins', sans-serif;
+    } 
+    #logoname{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .openbtn
+    {
+        display:inline-block;
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
+    }
+    
+    #logoname img{
+        width: 33px;
+        height: 33px;
+        margin-left: 8px;
+    }
+
+    #logoname span
+{
+    margin-left: 7px;
+    font-size: 0.6rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+#profilesetting
+{
+    
+     display:flex;
+     align-items: center;
+     justify-content: start;
+     text-align:center; 
+
+}
+#profilebutton
+{
+font-size: 0.5rem;
+}
+#profilebutton img
+{
+width:14px;
+height: 14px;
+margin-right: 2px;
+}
+#profilebutton:hover
+{
+background-color: #36C1FF;
+}
+#changepassword
+{
+font-size: 0.45rem;
+}
+#logout
+{
+    font-size: 0.45rem;
+}
+#changepassword:hover
+{
+    background-color:#36C1FF ;
+}
+#logout:hover
+{
+    background-color:rgb(211, 9, 9);
+
+}
+
+#profile
+    {
+        width: 100%;
+        margin-top:20px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid gray;
+        display:flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+    #profilepic
+    {
+        width: 25%; 
+    }
+    #profilepic img
+    {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        margin-left: 25%;
+    
+    }
+    #profilename
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-bottom: 10px;
+        font-weight:bolder;
+    }
+    #username
+    {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    #navbar
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    #navbar h4
+    {
+        font-family: 'Poppins', sans-serif;
+    }
+    #navbar a button:hover
+    {
+       background-color: #36C1FF;
+       text-decoration: none;
+       font-weight: bold;
+    }
+    .buttons:active
+    {
+        background-color: #36C1FF;
+        text-decoration: none;
+    }
+    .buttons
+    {
+        width: 100%;
+        margin-top: 15px;
+        border-radius: 0px 20px 20px 0px;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 1.2rem;
+        padding: 2px;
+        background-color: #235EFF;
+        color: white;
+        font-family: montserrat;
+        
+    }
+    .buttons i 
+    {
+      margin-right: 10px;
+      margin-left: 5px;
+      color: black;
+    }
+    .subbuttons
+    {
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 0px 20px 20px 0px;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 1.2rem;
+        padding: 2px;
+        background-color: #235EFF;
+        color: white;
+        font-family: montserrat;
+    }
+    .subbuttons i
+    {
+        margin-right: 10px;
+        margin-left: 5px;
+        color: black;
+    }
+   
+  
+    
+    /* section for content area  */
+    
+     #contentarea
+    {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    } 
+    #regform .card-title
+    {
+        font-size: .75rem;
+    }
+    #regform .card
+    {
+        padding: 30px;
+        border-radius: 20px;
+        margin-top: 30px;
+    }
+    #regform .card input
+    {
+         margin-bottom: 15px;
+         font-weight: bold;
+         font-size: .65rem;
+    }
+    #regform label
+    {
+        font-weight: bold;
+        font-size: .65rem;
+    }
+    /* student record style start*/
+
+    #recordcard .card
+    {
+        border-radius: 20px;
+        padding: 20px;
+    }
+    #recordtable
+    {
+        font-size: .57rem;
+    }
+
+    /* student record style end*/
+
+     
+    /* assign class style start*/
+
+    #assignclass .card
+    {
+        border-radius: 20px;
+        padding: 20px;
+    }
+    #assignclass form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+   #assignclass form label
+   {
+       margin-top:10px ;
+       font-weight: bold;
+   }
+  
+
+    /* assign class style end*/
+
+    /* promote class style start*/
+
+    #promote .card
+    {
+        border-radius: 20px;
+        padding: 20px;
+    }
+    #promote form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+   #promote form label
+   {
+       margin-top:10px ;
+       font-weight: bold;
+   }
+  
+
+    /* promote class style end*/
+
+    /* attendance style start*/
+
+    #attendance
+    {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 0.4rem;
+        border-radius: 15px;
+        background-color: white;
+        padding: 7px;   
+        box-shadow:5px 10px 10px rgb(46, 45, 45); 
+    }
+    #attendance:hover
+    {
+        box-shadow:7px 12px 12px rgb(46, 45, 45);
+    }
+    #attendance span
+    {
+        font-size: 0.8rem;
+        margin-top: 10px;
+        margin-left: 20px;
+      font-weight: bolder;
+    }
+
+    #filters
+    {   
+        margin-top: 40px;
+        font-size: 0.6rem;
+        border-radius: 15px;
+        background-color: white;
+        padding: 7px;
+        box-shadow:5px 10px 10px rgb(46, 45, 45);  
+    }
+    #filters span 
+    {
+        font-size: 0.8rem;
+        font-weight: bolder;
+        margin-left: 20px;
+    }
+
+    #filters form
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    #filters select 
+    {
+        margin-left:5px;
+        border-radius: 5px;
+    }
+    #search_button
+    {
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+
+    
+    /* attendance style end*/
+ 
+    /* view class style start*/
+    #class
+    {
+        width: 200;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 0.6rem;
+        border-radius: 15px;
+        background-color: white;
+        padding: 7px;   
+        box-shadow:5px 10px 10px rgb(46, 45, 45); 
+    }
+    #class:hover
+    {
+        box-shadow:7px 12px 12px rgb(46, 45, 45);
+    }
+    #class span
+    {
+        font-size: 0.8rem;
+        margin-top: 10px;
+      font-weight: bolder;
+    }
+    /* for edit course button  */
+    #class a button 
+    {
+        font-size: .6rem;
+    }
+    /* for delete course button  */
+    #class button 
+    {
+        font-size: .6rem;
+    }
+    
+
+    #filters
+    {   
+        margin-top: 40px;
+        font-size: 0.6rem;
+        border-radius: 15px;
+        background-color: white;
+        padding: 7px;
+        box-shadow:5px 10px 10px rgb(46, 45, 45);  
+    }
+    #filters span 
+    {
+        font-size: 0.8rem;
+        font-weight: bolder;
+        margin-left: 20px;
+    }
+
+    #filters form
+    {
+        display: flex;
+        flex-direction:column;
+    }
+    #filters select 
+    {
+        margin-left:5px;
+        border-radius: 5px;
+        margin-top: 7px;
+    }
+    #search_button
+    {
+        margin-left: 5px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+        /* view class style end*/
+
+    /* student result report  */
+        #studentresult
+        {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-size: 0.6rem;
+            border-radius: 15px;
+            background-color: white;
+            padding: 7px;   
+            box-shadow:5px 10px 10px rgb(46, 45, 45); 
+        }
+        #studentresult:hover
+        {
+            box-shadow:7px 12px 12px rgb(46, 45, 45);    }
+        #studentresult span
+        {
+            font-size: 0.8rem;
+            margin-top: 10px;
+            margin-left: 20px;
+          font-weight: bolder;
+        
+        }
+
+
+        /* student courses report  */
+
+        #courses
+        {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-size: 0.6rem;
+            border-radius: 15px;
+            background-color: white;
+            padding: 7px;   
+            box-shadow:5px 10px 10px rgb(46, 45, 45); 
+        }
+        #courses:hover
+        {
+            box-shadow:7px 12px 12px rgb(46, 45, 45);    }
+        #courses span
+        {
+            font-size: 0.8rem;
+            margin-top: 10px;
+            margin-left: 20px;
+          font-weight: bolder;
+        
+        }
+    
+
+} /* smallest devices (phones, 400px and down)  query end*/
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (min-width: 501px)
+{
+    #header
+    {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #235EFF;
+        color: white;
+        padding:1vh;
+        font-family: 'Poppins', sans-serif;
+    } 
+    #logoname{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .openbtn
+    {
+        display:inline-block;
+        width: 38px;
+        height: 38px;
+        margin-left: 15px;
+    }
+    
+    #logoname img{
+        width: 60px;
+        height: 60px;
+        margin-left: 10px;
+    }
+
+    #logoname span
+{
+    margin-left: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+#profilesetting
+{
+    
+     display:flex;
+     align-items: center;
+     justify-content: start;
+     text-align:center; 
+
+}
+#profilebutton
+{
+font-size: 0.8rem;
+}
+#profilebutton img
+{
+width:18px;
+height: 18px;
+margin-right: 2px;
+}
+#profilebutton:hover
+{
+background-color: #36C1FF;
+}
+#changepassword
+{
+font-size: 0.6rem;
+}
+#logout
+{
+    font-size: 0.6rem;
+}
+#changepassword:hover
+{
+    background-color:#36C1FF ;
+}
+#logout:hover
+{
+    background-color:rgb(211, 9, 9);
+
+}
+
+#profile
+    {
+        width: 100%;
+        margin-top:20px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid gray;
+        display:flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+    #profilepic
+    {
+        width: 25%; 
+    }
+    #profilepic img
+    {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        margin-left: 25%;
+    
+    }
+    #profilename
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-bottom: 10px;
+        font-weight:bolder;
+    }
+    #username
+    {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    #navbar
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    #navbar h4
+    {
+        font-family: 'Poppins', sans-serif;
+    }
+    #navbar a button:hover
+    {
+       background-color: #36C1FF;
+       text-decoration: none;
+       font-weight: bold;
+    }
+    .buttons:active
+    {
+        background-color: #36C1FF;
+        text-decoration: none;
+    }
+    .buttons
+    {
+        width: 100%;
+        margin-top: 15px;
+        border-radius: 0px 20px 20px 0px;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 1.2rem;
+        padding: 2px;
+        background-color: #235EFF;
+        color: white;
+        font-family: montserrat;
+        
+    }
+    .buttons i 
+    {
+      margin-right: 10px;
+      margin-left: 5px;
+      color: black;
+    }
+    .subbuttons
+    {
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 0px 20px 20px 0px;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 1.2rem;
+        padding: 2px;
+        background-color: #235EFF;
+        color: white;
+        font-family: montserrat;
+    }
+    .subbuttons i
+    {
+        margin-right: 10px;
+        margin-left: 5px;
+        color: black;
+    }
+  
+    
+    /* section for content area  */
+    
+     #contentarea
+    {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    } 
+    
+    #regform .card-title
+    {
+        font-size: 1.3rem;
+    }
+    #regform .card
+    {
+        padding: 30px;
+        border-radius: 20px;
+        margin-top: 30px;
+    }
+    #regform .card input
+    {
+         margin-bottom: 15px;
+         font-weight: bold;
+         font-size: .7rem;
+    }
+    #regform label
+    {
+        font-weight: bold;
+        font-size: .65rem;
+    }
+    
+    /* student record style start*/
+
+    #recordcard .card
+    {
+        border-radius: 20px;
+        padding: 20px;
+    }
+    #recordtable
+    {
+        font-size: .65rem;
+    }
+
+    /* student record style end*/
+
+     
+    /* assign class style start*/
+
+    #assignclass .card
+    {
+        border-radius: 20px;
+        padding: 20px;
+    }
+    #assignclass form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+   #assignclass form label
+   {
+       margin-top:10px ;
+       font-weight: bold;
+   }
+   #filters select option 
+   {
+       font-size: .7rem;
+   }
+  
+
+    /* assign class style end*/
+
+    /* promote class style start*/
+
+    #promote .card
+    {
+        border-radius: 20px;
+        padding: 20px;
+    }
+    #promote form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+   #promote form label
+   {
+       margin-top:10px ;
+       font-weight: bold;
+   }
+  
+
+    /* promote class style end*/
+
+    /* attendance style start*/
+
+    #attendance
+    {
+        margin-top: 40px;
+        font-size: 0.5rem;
+        border-radius: 15px;
+        background-color: white;
+        padding: 5px;   
+        box-shadow:5px 10px 10px rgb(46, 45, 45); 
+    }
+    #attendance:hover
+    {
+        box-shadow:7px 12px 12px rgb(46, 45, 45);
+    }
+    #attendance span
+    {
+        font-size: 1rem;
+        margin-top: 10px;
+        margin-left: 20px;
+      font-weight: bolder;
+    }
+
+    #filters
+    {   
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 0.5rem;
+        border-radius: 15px;
+        background-color: white;
+        padding: 5px;
+        box-shadow:5px 10px 10px rgb(46, 45, 45);  
+    }
+    #filters span 
+    {
+        font-size: 1rem;
+        margin-top: 10px;
+        margin-left: 20px;
+      font-weight: bolder;
+    }
+
+    #filters form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #filters select 
+    {
+        margin-left:5px;
+        border-radius: 5px;
+        margin-top: 7px;
+    }
+    #search_button
+    {
+        margin-left: 5px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+
+    
+    /* attendance style end*/
+
+     /* view class style start*/
+#class
+    {
+        margin-top: 40px;
+        font-size: 0.5rem;
+        border-radius: 15px;
+        background-color: white;
+        padding: 5px;   
+        box-shadow:5px 10px 10px rgb(46, 45, 45); 
+    }
+    #class:hover
+    {
+        box-shadow:7px 12px 12px rgb(46, 45, 45);
+    }
+    #class span
+    {
+        font-size: 1rem;
+        margin-top: 10px;
+        margin-left: 20px;
+      font-weight: bolder;
+    }
+
+    #filters
+    {   
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 0.5rem;
+        border-radius: 15px;
+        background-color: white;
+        padding: 5px;
+        box-shadow:5px 10px 10px rgb(46, 45, 45);  
+    }
+    #filters span 
+    {
+        font-size: 1rem;
+        margin-top: 10px;
+        margin-left: 20px;
+      font-weight: bolder;
+    }
+
+    #filters form
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    #filters select 
+    {
+        margin-left:5px;
+        border-radius: 5px;
+    }
+    #filters select option 
+    {
+        font-size: .7rem;
+    }
+    #search_button
+    {
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+
+     /* view class style end*/
+
+     /* student result report  */
+
+     #studentresult
+    {
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        font-size: 0.75rem;
+        border-radius: 15px;
+        background-color: white;
+        padding: 5px;   
+        box-shadow:5px 10px 10px rgb(46, 45, 45);  
+    }
+    #studentresult:hover
+    {
+        box-shadow:7px 12px 12px rgb(46, 45, 45);
+    }
+    #studentresult span
+    {
+        font-size: 1rem;
+        margin-top: 10px;
+        margin-left: 20px;
+      font-weight: bolder;
+    
+    }
+    
+} /* Extra small devices (phones, 600px and down)  query end*/
+
+/* * Small devices (portrait tablets and large phones, 600px and up) */ 
+@media only screen and (min-width: 600px) 
+{
+    #header
+    {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #235EFF;
+        color: white;
+        padding:2vh;
+        font-family: 'Poppins', sans-serif;
+    } 
+    #logoname{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .openbtn
+    {
+        display:inline-block;
+        width: 38px;
+        height: 38px;
+        margin-left: 15px;
+    }
+    
+    #logoname img{
+        width: 65px;
+        height: 65px;
+        margin-left: 15px;
+    }
+
+    #logoname span
+{
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+#profilesetting
+{
+    
+     display:flex;
+     align-items: center;
+     justify-content: start;
+     text-align:center; 
+
+}
+#profilebutton
+{
+font-size: 0.9rem;
+}
+#profilebutton img
+{
+width:19px;
+height: 19px;
+margin-right: 3px;
+}
+#profilebutton:hover
+{
+background-color: #36C1FF;
+}
+#changepassword
+{
+font-size: 0.75rem;
+}
+#logout
+{
+    font-size: 0.75rem;
+}
+#changepassword:hover
+{
+    background-color:#36C1FF ;
+}
+#logout:hover
+{
+    background-color:rgb(211, 9, 9);
+
+}
+
+#profile
+    {
+        width: 100%;
+        margin-top:20px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid gray;
+        display:flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+    #profilepic
+    {
+        width: 25%; 
+    }
+    #profilepic img
+    {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        margin-left: 25%;
+    
+    }
+    #profilename
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-bottom: 10px;
+        font-weight:bolder;
+    }
+    #username
+    {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    #navbar
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    #navbar h4
+    {
+        font-family: 'Poppins', sans-serif;
+    }
+    #navbar a button:hover
+    {
+       background-color: #36C1FF;
+       text-decoration: none;
+       font-weight: bold;
+    }
+    .buttons:active
+    {
+        background-color: #36C1FF;
+        text-decoration: none;
+    }
+    .buttons
+    {
+        width: 100%;
+        margin-top: 15px;
+        border-radius: 0px 20px 20px 0px;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 1.2rem;
+        padding: 2px;
+        background-color: #235EFF;
+        color: white;
+        font-family: montserrat;
+        
+    }
+    .buttons i 
+    {
+      margin-right: 10px;
+      margin-left: 5px;
+      color: black;
+    }
+    .subbuttons
+    {
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 0px 20px 20px 0px;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 1.2rem;
+        padding: 2px;
+        background-color: #235EFF;
+        color: white;
+        font-family: montserrat;
+    }
+    .subbuttons i
+    {
+        margin-right: 10px;
+        margin-left: 5px;
+        color: black;
+    }
+  
+    
+    /* section for content area  */
+    
+     #contentarea
+    {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    } 
+    #regform .card-title
+    {
+        font-size: 1.3rem;
+    }
+    #regform .card
+    {
+        padding: 30px;
+        border-radius: 20px;
+        margin-top: 30px;
+    }
+    #regform .card input
+    {
+         margin-bottom: 15px;
+         font-weight: bold;
+         font-size: .7rem;
+    }
+    #regform label
+    {
+        font-weight: bold;
+        font-size: .65rem;
+    }
+     /* student record style start*/
+
+     #recordcard .card
+     {
+         border-radius: 20px;
+         padding: 20px;
+     }
+     #recordtable
+     {
+         font-size: .8rem;
+     }
+ 
+     /* student record style end*/
+    
+      
+    /* assign class style start*/
+
+    #assignclass .card
+    {
+        border-radius: 20px;
+        padding: 20px;
+    }
+    #assignclass form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+   #assignclass form label
+   {
+       margin-top:10px ;
+       font-weight: bold;
+   }
+  
+
+    /* assign class style end*/
+
+    /* promote class style start*/
+
+    #promote .card
+    {
+        border-radius: 20px;
+        padding: 20px;
+    }
+    #promote form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+   #promote form label
+   {
+       margin-top:10px ;
+       font-weight: bold;
+   }
+  
+
+    /* promote class style end*/
+
+    /* attendance style start*/
+
+
+    #attendance
+    {
+        margin-top: 40px;
+        font-size: 0.7rem;
+        border-radius: 15px;
+        background-color: white;
+        padding: 5px;   
+        box-shadow:5px 10px 10px rgb(46, 45, 45); 
+    }
+    #attendance:hover
+    {
+        box-shadow:7px 12px 12px rgb(46, 45, 45);
+    }
+    #attendance span
+    {
+        font-size: 1rem;
+        margin-top: 10px;
+        margin-left: 20px;
+      font-weight: bolder;
+    }
+
+    #filters
+    {   
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 0.9rem;
+        border-radius: 15px;
+        background-color: white;
+        padding: 5px;
+        box-shadow:5px 10px 10px rgb(46, 45, 45);  
+    }
+    #filters span 
+    {
+        font-size: 1rem;
+        margin-top: 10px;
+        font-weight: bolder;
+        margin-left: 20px;
+    }
+
+    #filters form
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    #filters select 
+    {
+        margin-left:5px;
+        border-radius: 5px;
+    }
+    #search_button
+    {
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+
+    
+    /* attendance style end*/
+
+                   /* view class style start*/
+                   #class
+    {
+        margin-top: 40px;
+        font-size: 0.7rem;
+        border-radius: 15px;
+        background-color: white;
+        padding: 5px;   
+        box-shadow:5px 10px 10px rgb(46, 45, 45); 
+    }
+    #class:hover
+    {
+        box-shadow:7px 12px 12px rgb(46, 45, 45);
+    }
+    #class span
+    {
+        font-size: 1rem;
+        margin-top: 10px;
+        margin-left: 20px;
+      font-weight: bolder;
+    }
+
+    #filters
+    {   
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 0.9rem;
+        border-radius: 15px;
+        background-color: white;
+        padding: 5px;
+        box-shadow:5px 10px 10px rgb(46, 45, 45);  
+    }
+    #filters span 
+    {
+        font-size: 1rem;
+        margin-top: 10px;
+        font-weight: bolder;
+        margin-left: 20px;
+    }
+
+    #filters form
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    #filters select 
+    {
+        margin-left:5px;
+        border-radius: 5px;
+    }
+    #search_button
+    {
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+               /* view class style end*/
+
+               /* student result report  */
+
+               #studentresult
+               {
+                   margin-top: 40px;
+                   margin-bottom: 40px;
+                   font-size: 0.9rem;
+                   border-radius: 15px;
+                   background-color: white;
+                   padding: 5px;   
+                   box-shadow:5px 10px 10px rgb(46, 45, 45);  
+               }
+               #studentresult:hover
+               {
+                   box-shadow:7px 12px 12px rgb(46, 45, 45);
+               }
+               #studentresult span
+               {
+                   font-size: 1rem;
+                   margin-top: 10px;
+                   margin-left: 20px;
+                 font-weight: bolder;
+               
+               }
+
+               /* courses report  */
+               #courses
+               {
+                   margin-top: 40px;
+                   margin-bottom: 40px;
+           
+                   font-size: 0.75rem;
+                   border-radius: 15px;
+                   background-color: white;
+                   padding: 5px;   
+                   box-shadow:5px 10px 10px rgb(46, 45, 45);  
+               }
+               #courses:hover
+               {
+                   box-shadow:7px 12px 12px rgb(46, 45, 45);
+               }
+               #courses span
+               {
+                   font-size: 1rem;
+                   margin-top: 10px;
+                   margin-left: 20px;
+                 font-weight: bolder;
+               
+               }
+
+ }/*Small devices (portrait tablets and large phones, 600px and up) query end*/ 
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+    #header
+    {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #235EFF;
+        color: white;
+        padding:2vh;
+        font-family: 'Poppins', sans-serif;
+    } 
+    #logoname{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .openbtn
+    {
+        display:inline-block;
+        width: 38px;
+        height: 38px;
+        margin-left: 15px;
+    }
+    
+    #logoname img{
+        width: 70px;
+        height: 70px;
+        margin-left: 15px;
+    }
+
+    #logoname span
+{
+    margin-left: 10px;
+    font-size: 1.45rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+#profilesetting
+{
+    
+     display:flex;
+     align-items: center;
+     justify-content: start;
+     text-align:center; 
+
+}
+#profilebutton
+{
+font-size: 1.1rem;
+}
+#profilebutton img
+{
+width:20px;
+height: 20px;
+margin-right: 4px;
+}
+#profilebutton:hover
+{
+background-color: #36C1FF;
+}
+#changepassword
+{
+font-size: 0.9rem;
+}
+#logout
+{
+    font-size: 0.9rem;
+}
+#changepassword:hover
+{
+    background-color:#36C1FF ;
+}
+#logout:hover
+{
+    background-color:rgb(211, 9, 9);
+
+}
+
+#profile
+    {
+        width: 100%;
+        margin-top:20px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid gray;
+        display:flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+    #profilepic
+    {
+        width: 25%; 
+    }
+    #profilepic img
+    {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        margin-left: 25%;
+    
+    }
+    #profilename
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-bottom: 10px;
+        font-weight:bolder;
+    }
+    #username
+    {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    #navbar
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    #navbar h4
+    {
+        font-family: 'Poppins', sans-serif;
+    }
+    #navbar a button:hover
+    {
+       background-color: #36C1FF;
+       text-decoration: none;
+       font-weight: bold;
+    }
+    .buttons:active
+    {
+        background-color: #36C1FF;
+        text-decoration: none;
+    }
+    .buttons
+    {
+        width: 100%;
+        margin-top: 15px;
+        border-radius: 0px 20px 20px 0px;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 1.2rem;
+        padding: 2px;
+        background-color: #235EFF;
+        color: white;
+        font-family: montserrat;
+        
+    }
+    .buttons i 
+    {
+      margin-right: 10px;
+      margin-left: 5px;
+      color: black;
+    }
+    .subbuttons
+    {
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 0px 20px 20px 0px;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 1.2rem;
+        padding: 2px;
+        background-color: #235EFF;
+        color: white;
+        font-family: montserrat;
+    }
+    .subbuttons i
+    {
+        margin-right: 10px;
+        margin-left: 5px;
+        color: black;
+    }
+  
+    
+    /* section for content area  */
+    
+     #contentarea
+    {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    } 
+    #regform .card
+    {
+        padding: 30px;
+        border-radius: 20px;
+        margin-top: 30px;
+    }
+    #regform .card input
+    {
+         margin-bottom: 15px;
+         font-weight: bold;
+         font-size: .8rem;
+    }
+    #regform label
+    {
+        font-weight: bold;
+    }
+    
+     /* student record style start*/
+
+     #recordcard .card
+     {
+         border-radius: 20px;
+         padding: 20px;
+     }
+     #recordtable
+     {
+         font-size: 1rem;
+     }
+ 
+     /* student record style end*/
+
+      
+    /* assign class style start*/
+
+    #assignclass .card
+    {
+        border-radius: 20px;
+        padding: 20px;
+    }
+    #assignclass form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+   #assignclass form label
+   {
+       margin-top:10px ;
+       font-weight: bold;
+   }
+  
+
+    /* assign class style end*/
+
+    /* promote class style start*/
+
+    #promote .card
+    {
+        border-radius: 20px;
+        padding: 20px;
+    }
+    #promote form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+   #promote form label
+   {
+       margin-top:10px ;
+       font-weight: bold;
+   }
+  
+
+    /* promote class style end*/
+
+            
+    /* attendance style start*/
+
+ 
+    #attendance
+    {
+        margin-top: 40px;
+        font-size: 1.08rem;
+        border-radius: 15px;
+        background-color: white;
+        padding: 5px;   
+        box-shadow:5px 10px 10px rgb(46, 45, 45); 
+    }
+    #attendance:hover
+    {
+        box-shadow:7px 12px 12px rgb(46, 45, 45);
+    }
+    #attendance span
+    {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        margin-left: 20px;
+      font-weight: bolder;
+    }
+
+    #filters
+    {   
+        margin-top: 40px;
+        font-size: 1.08rem;
+        border-radius: 15px;
+        background-color: white;
+        padding: 5px;
+        box-shadow:5px 10px 10px rgb(46, 45, 45);  
+    }
+    #filters span 
+    {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        font-weight: bolder;
+        margin-left: 20px;
+    }
+
+    #filters form
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    #filters select 
+    {
+        margin-left:5px;
+        border-radius: 5px;
+    }
+    #search_button
+    {
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+
+
+    /* attendance style end*/
+
+               /* view class style start*/
+               #class
+               {
+                   margin-top: 40px;
+                   font-size: 1.08rem;
+                   border-radius: 15px;
+                   background-color: white;
+                   padding: 5px;   
+                   box-shadow:5px 10px 10px rgb(46, 45, 45); 
+               }
+               #class:hover
+               {
+                   box-shadow:7px 12px 12px rgb(46, 45, 45);
+               }
+               #class span
+               {
+                   font-size: 1.3rem;
+                   margin-top: 10px;
+                   margin-left: 20px;
+                 font-weight: bolder;
+               }
+           
+               #filters
+               {   
+                   margin-top: 40px;
+                   font-size: 1.08rem;
+                   border-radius: 15px;
+                   background-color: white;
+                   padding: 5px;
+                   box-shadow:5px 10px 10px rgb(46, 45, 45);  
+               }
+               #filters span 
+               {
+                   font-size: 1.3rem;
+                   margin-top: 10px;
+                   font-weight: bolder;
+                   margin-left: 20px;
+               }
+           
+               #filters form
+               {
+                   display: flex;
+                   flex-direction: row;
+               }
+               #filters select 
+               {
+                   margin-left:5px;
+                   border-radius: 5px;
+               }
+               #search_button
+               {
+                   margin-left: 5px;
+                   border-radius: 10px;
+               }
+           
+               /* view class style end*/
+
+               /* student result report  */
+
+               #studentresult
+               {
+                   margin-top: 40px;
+                   margin-bottom: 40px;
+                   font-size: 1.08rem;
+                   border-radius: 15px;
+                   background-color: white;
+                   padding: 5px;   
+                   box-shadow:5px 10px 10px rgb(46, 45, 45); 
+               }
+               #studentresult:hover
+               {
+                   box-shadow:7px 12px 12px rgb(46, 45, 45);
+               }
+               #studentresult span
+               {
+                   font-size: 1.3rem;
+                   margin-top: 10px;
+                   margin-left: 20px;
+                 font-weight: bolder;
+               
+               }
+               #courses
+               {
+                   margin-top: 40px;
+                   margin-bottom: 40px;
+                   font-size: 0.9rem;
+                   border-radius: 15px;
+                   background-color: white;
+                   padding: 5px;   
+                   box-shadow:5px 10px 10px rgb(46, 45, 45);  
+               }
+               #courses:hover
+               {
+                   box-shadow:7px 12px 12px rgb(46, 45, 45);
+               }
+               #courses span
+               {
+                   font-size: 1rem;
+                   margin-top: 10px;
+                   margin-left: 20px;
+                 font-weight: bolder;
+               
+               }
+
+} /* Medium devices (landscape tablets, 768px and up) query end
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+{
+    
+    #header
+    {
+        height: 15vh;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #235EFF;
+        color: white;
+        padding:2vh;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    #logoname{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .openbtn
+    {
+        display:inline-block;
+    }
+    #logoname img{
+        width: 75px;
+        height: 75px;
+        margin-left: 30px;
+    }
+    #logoname span
+    {
+        margin-left: 15px;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+    
+    }
+    #profilesetting
+{
+    
+     display:flex;
+     align-items: center;
+     justify-content: start;
+     text-align:center; 
+
+}
+#profilebutton
+{
+font-size: 1.3rem;
+}
+#profilebutton img
+{
+width: 22px;
+height: 22px;
+margin-right: 4px;
+}
+    #profilebutton:hover
+    {
+    background-color: #36C1FF;
+    }
+    #changepassword:hover
+    {
+        background-color:#36C1FF ;
+    }
+    #logout:hover
+    {
+        background-color:rgb(211, 9, 9);
+    
+    }
+    #profile
+    {
+        width: 100%;
+        margin-top:20px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid gray;
+        display:flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+    #profilepic
+    {
+        width: 25%; 
+    }
+    #profilepic img
+    {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        margin-left: 25%;
+    
+    }
+    #profilename
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-bottom: 10px;
+        font-weight:bolder;
+    }
+    #username
+    {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    #navbar
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    #navbar h4
+    {
+        font-family: 'Poppins', sans-serif;
+    }
+    #navbar a button:hover
+    {
+       background-color: #36C1FF;
+       text-decoration: none;
+       font-weight: bold;
+    }
+    .buttons:active
+    {
+        background-color: #36C1FF;
+        text-decoration: none;
+    }
+    .buttons
+    {
+        width: 100%;
+        margin-top: 15px;
+        border-radius: 0px 20px 20px 0px;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 1.2rem;
+        padding: 2px;
+        background-color: #235EFF;
+        color: white;
+        font-family: montserrat;
+        
+    }
+    .buttons i 
+    {
+      margin-right: 10px;
+      margin-left: 5px;
+      color: black;
+    }
+    .subbuttons
+    {
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 0px 20px 20px 0px;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 1.2rem;
+        padding: 2px;
+        background-color: #235EFF;
+        color: white;
+        font-family: montserrat;
+    }
+    .subbuttons i
+    {
+        margin-right: 10px;
+        margin-left: 5px;
+        color: black;
+    }
+  
+    
+    /* section for content area  */
+    
+     #contentarea
+    {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    } 
+    
+    #regform .card
+    {
+        padding: 30px;
+        border-radius: 20px;
+        margin-top: 30px;
+    }
+    #regform .card input
+    {
+         margin-bottom: 15px;
+         font-weight: bold;
+    }
+    #regform label
+    {
+        font-weight: bold;
+    }
+    
+    
+    /* assign class style start*/
+
+    #assignclass .card
+    {
+        border-radius: 20px;
+        padding: 20px;
+    }
+    #assignclass form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+   #assignclass form label
+   {
+       margin-top:10px ;
+       font-weight: bold;
+   }
+  
+
+    /* assign class style end*/
+
+
+     /* promote class style start*/
+
+     #promote .card
+     {
+         border-radius: 20px;
+         padding: 20px;
+     }
+     #promote form
+     {
+         display: flex;
+         flex-direction: column;
+     }
+    #promote form label
+    {
+        margin-top:10px ;
+        font-weight: bold;
+    }
+   
+ 
+     /* promote class style end*/
+
+          /* attendance style start*/
+
+
+     #attendance
+    {
+        font-size: 1rem;
+        border-radius: 15px;
+        background-color: white;
+        padding: 15px;
+        box-shadow:5px 10px 10px rgb(46, 45, 45);
+    
+    }
+    #attendance:hover
+    {
+        box-shadow:7px 12px 12px rgb(46, 45, 45);
+    }
+    #attendance span
+    {
+      font-weight: bolder;
+    }
+    #filters
+    {   
+        margin-top: 40px;
+        font-size: 1rem;
+        border-radius: 15px;
+        background-color: white;
+        padding: 15px;
+        box-shadow:5px 10px 10px rgb(46, 45, 45);  
+    }
+    #filters span 
+    {
+        font-size: 1.2rem;
+        font-weight: bolder;
+        margin-left: 20px;
+    }
+
+    #filters form
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    #filters select 
+    {
+        margin-left:5px;
+        border-radius: 5px;
+    }
+    #search_button
+    {
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+           /* attendance style end*/
+
+           /* view class style start*/
+
+
+     #class
+     {
+         font-size: 1rem;
+         border-radius: 15px;
+         background-color: white;
+         padding: 15px;
+         box-shadow:5px 10px 10px rgb(46, 45, 45);
+     
+     }
+     #class:hover
+     {
+         box-shadow:7px 12px 12px rgb(46, 45, 45);
+     }
+     #class span
+     {
+       font-weight: bolder;
+     }
+     #filters
+     {   
+         margin-top: 40px;
+         font-size: 1rem;
+         border-radius: 15px;
+         background-color: white;
+         padding: 15px;
+         box-shadow:5px 10px 10px rgb(46, 45, 45);  
+     }
+     #filters span 
+     {
+         font-size: 1.2rem;
+         font-weight: bolder;
+         margin-left: 20px;
+     }
+ 
+     #filters form
+     {
+         display: flex;
+         flex-direction: row;
+     }
+     #filters select 
+     {
+         margin-left:5px;
+         border-radius: 5px;
+     }
+     #search_button
+     {
+         margin-left: 5px;
+         border-radius: 10px;
+     }
+            /* view style end*/
+
+ 
+            /* student result report  */
+
+            #studentresult
+    {
+        font-size: 1rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        background-color: white;
+        padding: 15px;
+        box-shadow:5px 10px 10px rgb(46, 45, 45);
+    
+    }
+    #studentresult:hover
+    {
+        box-shadow:7px 12px 12px rgb(46, 45, 45);
+    }
+    #studentresult span
+    {
+      font-weight: bolder;
+    }
+
+    /* courses report  */
+
+    #courses
+    {
+        font-size: 1rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        background-color: white;
+        padding: 15px;
+        box-shadow:5px 10px 10px rgb(46, 45, 45);
+    
+    }
+    #courses:hover
+    {
+        box-shadow:7px 12px 12px rgb(46, 45, 45);
+    }
+    #courses span
+    {
+      font-weight: bolder;
+    }
+}/* Large devices (laptops/desktops, 992px and up) query end */
+

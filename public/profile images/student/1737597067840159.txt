@@ -1,0 +1,11 @@
+//for get() array methods
+if($data_array->isEmpty())
+{dd('EMPTY');}
+else
+{dd('NOT EMPTY');}
+
+//for other array
+if (count($data_array) > 0) 
+{dd('EMPTY');}
+else
+{dd('NOT EMPTY');}
